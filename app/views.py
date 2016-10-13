@@ -31,7 +31,7 @@ def requires_auth(f):
     return decorated
 
 
-@app_server.route('/', methods=['POST'])
+@app_server.route('/st-service/status', methods=['POST'])
 @requires_auth
 def check_status():
     return Response('Perfect', 200)

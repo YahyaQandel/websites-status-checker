@@ -1,0 +1,10 @@
+unittests
+cd project_folder
+python -m unittest discover
+
+nosetests
+cd project_folder
+nosetests-sv
+#hint
+You should make sure that every test file inside tests folder isn't executable
+chmod -x *.py
